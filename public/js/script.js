@@ -1,7 +1,14 @@
+function jQFormSerializeArrToJson(formSerializeArr) {
+  var jsonObj = {};
+  jQuery.map(formSerializeArr, function (n, i) {
+      jsonObj[n.name] = n.value;
+  });
+
+  return jsonObj;
+}
+
 // Animations init
 // new WOW().init();
-
-const { post } = require("../../routes/Homepage");
 
 function register() {
   $('#myTab a[href="#register"]').trigger("click");
@@ -78,17 +85,29 @@ $(document).ready(function () {
    * Slide Bar End
    ****************************************
    */
+
   $("#registerButton").click(function (e) {
-    console.log(e);
-    e.preventDefault;
-    console.log("Hey bro u r start Use js");
+    e.preventDefault();
+    e = e.currentTarget;
+    let form = `<form class="text-center p-5" action="/authOTP" method="POST">
+        <p class="h4 mb-4">Confirm OTP</p>
+        <input type="number" id="userOTP" class="form-control" placeholder="Enter OTP" aria-describedby="defaultOtpHelpBlock">
+        <small id="defaultOtpHelpBlock" class="form-text text-muted mb-4">
+          Enter 5 digit code that we will sendon your Email</small>
+        <button class="btn btn-info my-4 btn-block waves-effect waves-light" type="submit">Submit</button>
+        </form>`;
+    let data = jQFormSerializeArrToJson($(e.parentNode).serializeArray());
+    let postUrl = $(e.parentNode).attr('action');
+    console.log(postUrl);
     $.ajax({
-      url:"/signIn",
+      url:postUrl,
       type:'POST',
+      data: data,
       datatype:'json',
-      timeout:2500,
+      timeout:5000,
       success:function(result){
-        console.log(result)
+        console.log("success"+ result)
+        $('#register').html(form);
       }
     });
   });
