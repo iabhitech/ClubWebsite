@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>TechClub</title>
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    />
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.css" rel="stylesheet" />
+    <!-- Your custom styles (optional) -->
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+  <body class="fixed-sn white-skin">
+    <!--Double navigation-->
+    <header>
+            <!-- Sidebar navigation -->
+            <div id="slide-out-nav" class="sidenav sidenav-fixed">
+              <ul class="list-unstyled">
+                <li class="list-item">
+                  <div class="brand-logo user-info waves-light waves-effect waves-light">           
+               
+                    <ul class="collapsible user-info">
+                      
+                      <li>
+                        <a class="collapsible-header waves-effect pl-3">
+                          <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-2.jpg" class="rounded-circle avatar-xl z-depth-0" alt="avatar image">
+                          <div class="info">
+                            <h6>Abhineet Verma <i class="fas fa-angle-down rotate-icon ml-auto"></i></h6>
+                            <small class="d-block">Web Developer</small>
+                          </div>
+                          
+                        </a>
+                        <div class="collapsible-body">
+                          <ul class="list-unstyled">
+                            <li>
+                              <a href="#" class="waves-effect"><i class="fas fa-cog"></i>Settings</a></li>
+                            <li>
+                              <a href="#" class="waves-effect"><i class="fas fa-pen"></i>Send Feedback</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+               
+      
+                <li>
+                  <input class="form-control" type="text" placeholder="Search">
+                </li>
+      
+                <li>
+                  <a class="waves-effect arrow-r" href="/dashboard.html">
+                    <i class="fas fa-home"></i> Dashboard</i>
+                  </a>    
+                </li>
+                <li>
+                  <a class="waves-effect arrow-r" href="/profile.html">
+                    <i class="fas fa-user-edit"></i> Edit Profile
+                  </a>    
+                </li>
+                <li>
+                  <a class="waves-effect arrow-r" href="/viewProfile.html">
+                    <i class="fa fa-user" aria-hidden="true"></i> View Profile
+                  </a>    
+                </li>
+      
+                <!-- <li>
+                  <ul class="collapsible">
+                    <li>
+                      <a class="collapsible-header waves-effect arrow-r"
+                        ><i class="fas fa-chevron-right"></i> Menu<i
+                          class="fas fa-angle-down rotate-icon"
+                        ></i
+                      ></a>
+                      <div class="collapsible-body">
+                        <ul class="list-unstyled">
+                          <li><a href="#" class="waves-effect">Submit listing</a></li>
+                          <li>
+                            <a href="#" class="waves-effect">Registration form</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li>
+                      <a class="collapsible-header waves-effect arrow-r"
+                        ><i class="fas far fa-envelope"></i> Contact Us<i
+                          class="fas fa-angle-down rotate-icon"
+                        ></i
+                      ></a>
+                      <div class="collapsible-body">
+                        <ul class="list-unstyled">
+                          <li><a href="#" class="waves-effect">Submit listing</a></li>
+                          <li>
+                            <a href="#" class="waves-effect">Registration form</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li>
+                      <a class="collapsible-header waves-effect arrow-r"
+                        ><i class="fas fa-chevron-right"></i> Menu 1<i
+                          class="fas fa-angle-down rotate-icon"
+                        ></i
+                      ></a>
+                      <div class="collapsible-body">
+                        <ul class="list-unstyled">
+                          <li><a href="#" class="waves-effect">Submit listing</a></li>
+                          <li>
+                            <a href="#" class="waves-effect">Registration form</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+      
+                <li>
+                  <a class="waves-effect arrow-r"
+                        ><i class="fas fa-eye"></i> About</a>
+                </li>
+      
+                 
+                <li>
+                  <ul class="social-icon">
+                    <li>
+                      <a href="#" class="icons-sm fb-ic"
+                        ><i class="fab fa-facebook-f"> </i
+                      ></a>
+                    </li>
+                    <li>
+                      <a href="#" class="icons-sm pin-ic"
+                        ><i class="fab fa-pinterest"> </i
+                      ></a>
+                    </li>
+                    <li>
+                      <a href="#" class="icons-sm gplus-ic"
+                        ><i class="fab fa-google-plus-g"> </i
+                      ></a>
+                    </li>
+                    <li>
+                      <a href="#" class="icons-sm tw-ic"
+                        ><i class="fab fa-twitter"> </i
+                      ></a>
+                    </li>
+                  </ul>
+                </li> -->
+              </ul>
+            </div>
+      
+            <!--/. Sidebar navigation -->
+      
+            <!-- Navbar -->
+            <nav
+              class="navbar fixed-top navbar-toggleable-md navbar-expand-lg scrolling-navbar double-nav white"
+            >
+              <!-- SideNav slide-out-nav button -->
+              <div class="float-left">
+                <a
+                  href="#"
+                  id="openSideNav"
+                  data-activates="slide-out-nav"
+                  class="button-collapse black-text"
+                  ><i class="fas fa-bars"></i
+                ></a>
+              </div>
+              <!-- Breadcrumb-->
+              <div class="breadcrumb-dn mr-auto">
+                <p>Your Dashboard</p>
+              </div>
+              <ul class="nav navbar-nav nav-flex-icons ml-auto">
+                  
+                <li class="nav-item">
+                  <a class="nav-link"
+                    ><i class="fas fa-user"></i>
+                    <span class="clearfix d-none d-sm-inline-block">Account</span></a
+                  >
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdownMenuLink"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    Dropdown
+                  </a>
+                  <div
+                    class="dropdown-menu dropdown-menu-right p-2"
+                    aria-labelledby="navbarDropdownMenuLink"
+                  >
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </div>
+                </li>
+      
+                <li class="nav-item">
+                  <a class="nav-link waves-effect waves-light">
+                    <i class="fas fa-bell mr-0"></i>
+                    <span class="badge badge-danger mr-2">9</span>
+                    <span class="sr-only">unread messages</span>
+                  </a>
+                </li>
+                <li class="nav-item avatar dropdown">
+                  <a
+                    class="nav-link dropdown-toggle p-0"
+                    id="navbarDropdownMenuLink-55"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    <img
+                      src="https://mdbootstrap.com/img/Photos/Avatars/avatar-2.jpg"
+                      class="rounded-circle z-depth-0"
+                      alt="avatar image"/>
+                      <span class="clearfix d-none d-sm-inline-block">Abhineet Verma</span>
+                  </a>
+                  <div
+                    class="dropdown-menu dropdown-menu-lg-right p-2"
+                    aria-labelledby="navbarDropdownMenuLink-55"
+                  >
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                    <a class="dropdown-item" href="#">Logout</a>
+                  </div>
+                </li>
+              </ul>
+            </nav>
+            <!-- /.Navbar -->
+
+    </header>
+    <!--/.Double navigation-->
+
+    <!--Main layout-->
+    <main>
+      <div class="container-fluid dashboard">
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+          <strong>Holy guacamole!</strong> Welcome to Unnat Tech Club.
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, animi earum adipisci corporis rem laborum voluptas, itaque in cupiditate optio quae ex dicta hic consequatur debitis. Maxime tempora necessitatibus explicabo!
+        <div class="card-deck mb-2 feature-card">
+          <div class="card m-2">
+            <div class="text-center mt-4">
+              <i class="fa fa-laptop-code fa-3x blue-text" aria-hidden="true"></i>
+              <div class="pt-2"><strong>Technical Team</strong></div>
+            </div>
+            <hr>
+            <div class="card-body small pt-0">
+                <div class="d-flex">
+                  <span>Total Members</span>
+                  <span class="ml-auto">8</span>
+              </div>
+            </div>
+          </div>
+          <div class="card m-2">
+            <div class="text-center mt-4">
+              <i class="fa fa-chart-area fa-3x teal-text" aria-hidden="true"></i>
+              <div class="pt-2"><strong>Documentation Team</strong></div>
+            </div>
+            <hr>
+            <div class="card-body small pt-0">
+                <div class="d-flex">
+                  <span>Total Members</span>
+                  <span class="ml-auto">4</span>
+              </div>
+            </div>
+          </div>
+          <div class="card m-2">
+            <div class="text-center mt-4">
+              <i class="fab fa-sketch fa-3x indigo-text" aria-hidden="true"></i>
+              <div class="pt-2"><strong>Designing Team</strong></div>
+            </div>
+            <hr>
+            <div class="card-body small pt-0">
+                <div class="d-flex">
+                  <span>Total Members</span>
+                  <span class="ml-auto">5</span>
+              </div>
+            </div>
+          </div>
+          <div class="card m-2">
+            <div class="text-center mt-4">
+              <i class="fas fa-tasks fa-3x blue-text" aria-hidden="true"></i>
+              <div class="pt-2"><strong>Management Team</strong></div>
+            </div>
+            <hr>
+            <div class="card-body small pt-0">
+                <div class="d-flex">
+                  <span>Total Members</span>
+                  <span class="ml-auto">10</span>
+              </div>
+            </div>
+          </div>
+         
+        </div>
+      <div class="row">
+        <div class="col-md-3 p-1">
+          <div class="card loading">
+            <div class="card-header px-3">Members</div>
+            <div class="card-body p-0">
+              <ul class="list-unstyled">
+                <li class="list-item">
+                  <a href="#" >
+                    <div class="d-flex">
+                    <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-2.jpg" alt="" class="avatar rounded-circle avatar-x">
+                      <div class="pl-2">
+                        <h6 class="m-0">Rechard Willios</h6>
+                        <span class="text-muted small">Team Member</span>
+                    </div>
+                    </div>
+                  </a>
+                </li>
+    
+                <li class="list-item">
+                  <a href="#" >
+                    <div class="d-flex">
+                    <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-2.jpg" alt="" class="avatar rounded-circle avatar-x">
+                      <div class="pl-2">
+                        <h6 class="m-0">Loseod Mso</h6>
+                        <span class="text-muted small">Team Member</span>
+                    </div>
+                    </div>
+                  </a>
+                </li>
+    
+                <li class="list-item">
+                  <a href="#" >
+                    <div class="d-flex">
+                    <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-2.jpg" alt="" class="avatar rounded-circle avatar-x">
+                      <div class="pl-2">
+                        <h6 class="m-0">Abhineet Verma</h6>
+                        <span class="text-muted small">Team Member</span>
+                    </div>
+                    </div>
+                  </a>
+                </li>
+    
+                <li class="list-item">
+                  <a href="#" >
+                    <div class="d-flex">
+                    <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-2.jpg" alt="" class="avatar rounded-circle avatar-x">
+                      <div class="pl-2">
+                        <h6 class="m-0">Piyush</h6>
+                        <span class="text-muted small">Team Member</span>
+                    </div>
+                    </div>
+                  </a>
+                </li>
+    
+                <li class="list-item">
+                  <a href="#" >
+                    <div class="d-flex">
+                    <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-2.jpg" alt="" class="avatar rounded-circle avatar-x">
+                      <div class="pl-2">
+                        <h6 class="m-0">Lorem Spamd</h6>
+                        <span class="text-muted small">Coordinator</span>
+                    </div>
+                    </div>
+                  </a>
+                </li>
+    
+                <li class="list-item">
+                  <a href="#" >
+                    <div class="d-flex">
+                    <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-2.jpg" alt="" class="avatar rounded-circle avatar-x">
+                      <div class="pl-2">
+                        <h6 class="m-0">Abhineet Verma</h6>
+                        <span class="text-muted small">Team Member</span>
+                    </div>
+                    </div>
+                  </a>
+                </li>
+                
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 p-1 loading">
+            <div class="card card-header px-3 mb-2">Club's Announcements</div>
+    
+            <div class="card text-left mb-2">
+              <div class="card-body">
+                <div class="d-flex">
+                  <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-2.jpg" alt="" class="avatar rounded-circle avatar-x">
+                  <form action="" class="w-100">
+                    <div class="form-group pl-2">
+                      <textarea class="form-control" rows="2" placeholder="Write something here..."></textarea>
+                    </div>
+                    <div class="d-flex align-items-center">
+                      <select class="browser-default my-auto md-select">
+                        <option selected>Share with</option>
+                        <option value="1">Technical</option>
+                        <option value="2">Designing</option>
+                        <option value="3">Documentation</option>
+                        <option value="4">Management</option>
+                      </select>
+                      <button type="button" class="btn btn-primary btn-sm ml-auto btn-rounded">Share</button>
+                    </div>
+                  </form>
+                  
+                </div>
+              </div>
+            </div>
+            
+    
+            <ul class="list-unstyled">
+              <li class="list-item mb-2 card p-3">
+                <div class="d-flex">
+                  <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-2.jpg" alt="" class="avatar rounded-circle avatar-x">
+                  <div class="ml-2">
+                    <h6 class="m-0">Alen Koerm</h6>
+                    <span class="text-muted small">24 Oct 2020</span>
+                  </div>   
+                </div>
+                <hr class="m-2">
+                <div class="font-weight-normal">
+                   Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem saepe asperiores deserunt quae itaque et aperiam magni aliquam corrupti sed veritatis totam, pariatur cum quam nostrum eligendi labore repellat! Quasi?
+                </div>
+                
+                <div class="p-2 d-flex justify-content-around">
+                  <a class="btn-sm btn-link blue-text"><i class="far fa-heart"></i> Like</a>
+                  <a class="btn-sm btn-link blue-text"><i class="far fa-comments "></i> Suggestions</a>
+                </div>
+                
+              </li>
+    
+              <li class="list-item mb-2 card p-3">
+                <div class="d-flex">
+                  <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-2.jpg" alt="" class="avatar rounded-circle avatar-x">
+                  <div class="ml-2">
+                    <h6 class="m-0">Alen Koerm</h6>
+                    <span class="text-muted small">24 Oct 2020</span>
+                  </div>   
+                </div>
+                <hr class="m-2">
+                <div>
+                   Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem saepe asperiores deserunt quae itaque et aperiam magni aliquam corrupti sed veritatis totam, pariatur cum quam nostrum eligendi labore repellat! Quasi?
+                </div>
+                
+                <div class="p-2 d-flex justify-content-around">
+                  <a class="btn-sm btn-link blue-text"><i class="far fa-heart"></i> Like</a>
+                  <a class="btn-sm btn-link blue-text"><i class="far fa-comments"></i> Suggestions</a>
+                </div>
+              </li>
+              
+              <li class="list-item mb-2 card p-3">
+                <div class="d-flex">
+                  <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-2.jpg" alt="" class="avatar rounded-circle avatar-x">
+                  <div class="ml-2">
+                    <h6 class="m-0">Alen Koerm</h6>
+                    <span class="text-muted small">24 Oct 2020</span>
+                  </div>   
+                </div>
+                <hr class="m-2">
+                <div>
+                   Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem saepe asperiores deserunt quae itaque et aperiam magni aliquam corrupti sed veritatis totam, pariatur cum quam nostrum eligendi labore repellat! Quasi?
+                </div>
+                
+                <div class="p-2 d-flex justify-content-around">
+                  <a class="btn-sm btn-link blue-text"><i class="far fa-heart"></i> Like</a>
+                  <a class="btn-sm btn-link blue-text"><i class="far fa-comments"></i> Suggestions</a>
+                </div>
+              </li>
+            </ul>
+            <div class="d-flex justify-content-center p-2">
+              <div class="spinner-border blue-text" role="status">
+                <span class="sr-only">Loading...</span>
+              </div>
+              <span class="my-auto ml-2">Loading More</span>
+            </div>
+            
+        </div>
+        <div class="col-md-3 p-1 loading">
+          <div class="card">
+            <div class="card-header">Your Profile</div>
+            
+          <div class="text-center d-flex flex-column m-auto card-body">
+            <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-2.jpg" alt="" class="avatar rounded-circle avatar-xxl">
+            <h4 class="mb-0">Alen Kskd</h4>
+            <span class="text-muted">Web Developer</span>
+          </div>
+          <hr class="mb-0">
+          <div class="card-body">
+            <div class="d-flex blue-text"><i class="fas fa-star-half-alt my-auto mr-1"></i> Rating <span class="ml-auto">4.2</span></div>
+            <div class="d-flex blue-text"><i class="fas fa-tasks my-auto mr-1"></i> Event Organise <span class="ml-auto">2</span></div>
+          </div>
+          
+        </div>
+        </div>
+      </div>
+      </div>
+    </main>
+    <!--/Main layout-->
+
+    <!-- Footer Section  -->
+    <div id="footerWrapper"></div>
+    <!--.Footer Section  -->
+
+
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

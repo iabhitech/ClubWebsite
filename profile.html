@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>TechClub</title>
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    />
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.css" rel="stylesheet" />
+    <!-- Your custom styles (optional) -->
+    <link href="css/style.css" rel="stylesheet" />
+
+  </head>
+  <body class="fixed-sn white-skin">
+    <!--Double navigation-->
+    <header>
+            <!-- Sidebar navigation -->
+            <div id="slide-out-nav" class="sidenav sidenav-fixed">
+                <ul class="list-unstyled">
+                  <li class="list-item">
+                    <div class="brand-logo user-info waves-light waves-effect waves-light">           
+                 
+                      <ul class="collapsible user-info">
+                        
+                        <li>
+                          <a class="collapsible-header waves-effect pl-3">
+                            <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-2.jpg" class="rounded-circle avatar-xl z-depth-0" alt="avatar image">
+                            <div class="info">
+                              <h6>Abhineet Verma <i class="fas fa-angle-down rotate-icon ml-auto"></i></h6>
+                              <small class="d-block">Web Developer</small>
+                            </div>
+                            
+                          </a>
+                          <div class="collapsible-body">
+                            <ul class="list-unstyled">
+                              <li>
+                                <a href="#" class="waves-effect"><i class="fas fa-cog"></i>Settings</a></li>
+                              <li>
+                                <a href="#" class="waves-effect"><i class="fas fa-pen"></i>Send Feedback</a>
+                              </li>
+                            </ul>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                 
+        
+                  <li>
+                    <input class="form-control" type="text" placeholder="Search">
+                  </li>
+        
+                  <li>
+                    <a class="waves-effect arrow-r" href="/dashboard.html">
+                      <i class="fas fa-home"></i> Dashboard</i>
+                    </a>    
+                  </li>
+                  <li>
+                    <a class="waves-effect arrow-r" href="/profile.html">
+                      <i class="fas fa-user-edit"></i> Edit Profile
+                    </a>    
+                  </li>
+                  <li>
+                    <a class="waves-effect arrow-r" href="/viewProfile.html">
+                      <i class="fa fa-user" aria-hidden="true"></i> View Profile
+                    </a>    
+                  </li>
+                  
+                  <!-- <li>
+                    <ul class="collapsible">
+                      <li>
+                        <a class="collapsible-header waves-effect arrow-r"
+                          ><i class="fas fa-chevron-right"></i> Menu<i
+                            class="fas fa-angle-down rotate-icon"
+                          ></i
+                        ></a>
+                        <div class="collapsible-body">
+                          <ul class="list-unstyled">
+                            <li><a href="#" class="waves-effect">Submit listing</a></li>
+                            <li>
+                              <a href="#" class="waves-effect">Registration form</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li>
+                        <a class="collapsible-header waves-effect arrow-r"
+                          ><i class="fas far fa-envelope"></i> Contact Us<i
+                            class="fas fa-angle-down rotate-icon"
+                          ></i
+                        ></a>
+                        <div class="collapsible-body">
+                          <ul class="list-unstyled">
+                            <li><a href="#" class="waves-effect">Submit listing</a></li>
+                            <li>
+                              <a href="#" class="waves-effect">Registration form</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                      
+                    </ul>
+                  </li>
+        
+                  <li>
+                    <a class="waves-effect arrow-r"
+                          ><i class="fas fa-eye"></i> About</a>
+                  </li>
+        
+                   
+                  <li>
+                    <ul class="social-icon">
+                      <li>
+                        <a href="#" class="icons-sm fb-ic"
+                          ><i class="fab fa-facebook-f"> </i
+                        ></a>
+                      </li>
+                      <li>
+                        <a href="#" class="icons-sm pin-ic"
+                          ><i class="fab fa-pinterest"> </i
+                        ></a>
+                      </li>
+                      <li>
+                        <a href="#" class="icons-sm gplus-ic"
+                          ><i class="fab fa-google-plus-g"> </i
+                        ></a>
+                      </li>
+                      <li>
+                        <a href="#" class="icons-sm tw-ic"
+                          ><i class="fab fa-twitter"> </i
+                        ></a>
+                      </li>
+                    </ul>
+                  </li> -->
+                </ul>
+              </div>
+        
+              <!--/. Sidebar navigation -->
+        
+              <!-- Navbar -->
+              <nav
+                class="navbar fixed-top navbar-toggleable-md navbar-expand-lg scrolling-navbar double-nav white"
+              >
+                <!-- SideNav slide-out-nav button -->
+                <div class="float-left">
+                  <a
+                    href="#"
+                    id="openSideNav"
+                    data-activates="slide-out-nav"
+                    class="button-collapse black-text"
+                    ><i class="fas fa-bars"></i
+                  ></a>
+                </div>
+                <!-- Breadcrumb-->
+                <div class="breadcrumb-dn mr-auto">
+                  <p>Edit Profile</p>
+                </div>
+                <ul class="nav navbar-nav nav-flex-icons ml-auto">
+                    
+                  <li class="nav-item">
+                    <a class="nav-link"
+                      ><i class="fas fa-user"></i>
+                      <span class="clearfix d-none d-sm-inline-block">Account</span></a
+                    >
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      id="navbarDropdownMenuLink"
+                      data-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                    >
+                      Dropdown
+                    </a>
+                    <div
+                      class="dropdown-menu dropdown-menu-right p-2"
+                      aria-labelledby="navbarDropdownMenuLink"
+                    >
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                  </li>
+        
+                  <li class="nav-item">
+                    <a class="nav-link waves-effect waves-light">
+                      <i class="fas fa-bell mr-0"></i>
+                      <span class="badge badge-danger mr-2">9</span>
+                      <span class="sr-only">unread messages</span>
+                    </a>
+                  </li>
+                  <li class="nav-item avatar dropdown">
+                    <a
+                      class="nav-link dropdown-toggle p-0"
+                      id="navbarDropdownMenuLink-55"
+                      data-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                    >
+                      <img
+                        src="https://mdbootstrap.com/img/Photos/Avatars/avatar-2.jpg"
+                        class="rounded-circle z-depth-0"
+                        alt="avatar image"/>
+                        <span class="clearfix d-none d-sm-inline-block">Abhineet Verma</span>
+                    </a>
+                    <div
+                      class="dropdown-menu dropdown-menu-lg-right p-2"
+                      aria-labelledby="navbarDropdownMenuLink-55"
+                    >
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                      <a class="dropdown-item" href="#">Logout</a>
+                    </div>
+                  </li>
+                </ul>
+              </nav>
+              <!-- /.Navbar -->
+
+    </header>
+    <!--/.Double navigation-->
+
+    <!--Main layout-->
+    <main>
+        <div class="container-fluid bg-grey">
+            <div class="row">
+                <div class="col-md-3 p-1">
+                    <div class="card">
+                        <div class="card-header">Your Profile</div>
+                        
+                      <div class="text-center d-flex flex-column m-auto card-body">
+                        <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-2.jpg" alt="" class="avatar rounded-circle avatar-xxl">
+                        <h4 class="mb-0">Alen Kskd</h4>
+                        <span class="text-muted">Web Developer</span>
+                        <div class="d-flex blue-text mt-2"><i class="fas fa-star-half-alt my-auto mr-1"></i> 4.2 <span class="ml-auto"><i class="fas fa-tasks my-auto mr-1"></i> 4</span></div>
+                      </div>
+                      <hr class="mb-0">
+                      <div class="card-body p-2">
+                        <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                        <a class="nav-link active" id="v-pills-basic-tab" data-toggle="pill" href="#v-pills-basic" role="tab" aria-controls="v-pills-basic" aria-selected="true">Basic</a>
+                        <a class="nav-link" id="v-pills-security-tab" data-toggle="pill" href="#v-pills-security" role="tab" aria-controls="v-pills-security" aria-selected="false">Security</a>
+                        <!-- <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Messages</a>
+                        <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Settings</a> -->
+                        </div>  
+                      </div>
+                    </div>
+                </div>
+                <div class="col-md-8 p-1">
+                    <div class="tab-content" id="v-pills-tabContent">
+
+                        <div class="tab-pane fade show active" id="v-pills-basic" role="tabpanel" aria-labelledby="v-pills-basic-tab">
+                            <div class="card">
+                                <div class="card-header">Basic</div>
+                                <div class="card-body">
+                                    <!-- Extended default form grid -->
+                                    <form>
+                                        <!-- Grid row -->
+                                        <div class="form-row">
+                                        <!-- Default input -->
+                                        <div class="form-group col-md-6">
+                                            <label for="inputName">Name</label>
+                                            <input type="text" class="form-control" id="inputName" placeholder="Name" value="Alen Kakd">
+                                        </div>
+                                        <!-- Default input -->
+                                        <div class="form-group col-md-6">
+                                            <label for="inputUsername">Username</label>
+                                            <input type="text" class="form-control" id="inputUsername" placeholder="Username" autocomplete="none">
+                                        </div>
+                                        </div>
+                                        <!-- Grid row -->
+                                    
+                                        <!-- Default input -->
+                                        <div class="form-group mb-2">
+                                            <label for="staticEmail2">Email</label>
+                                            <input type="text" readonly class="form-control" id="staticEmail2" value="email@example.com">
+                                            <small id="emailHelp" class="form-text text-muted">To Change Email, Please go in Security Section</small>
+                                        </div>
+                                        <div class="form-group">
+                                        <label for="inputAddress">Address</label>
+                                        <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                                        </div>
+                                        <!-- Default input -->
+        
+                                        <!-- Grid row -->
+                                        <div class="form-row">
+                                        <!-- Default input -->
+                                        <div class="form-group col-md-6">
+                                            <label for="inputCity">City</label>
+                                            <input type="text" class="form-control" id="inputCity" placeholder="Kannauj">
+                                        </div>
+                                        <!-- Default input -->
+                                        <div class="form-group col-md-6">
+                                            <label for="inputZip">Zip</label>
+                                            <input type="text" class="form-control" id="inputZip" placeholder="11206">
+                                        </div>
+                                        </div>
+                                        <!-- Grid row -->
+                                        <button type="submit" class="btn btn-primary btn-md">Save</button>
+                                    </form>
+                                    <!-- Extended default form grid -->
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane fade" id="v-pills-security" role="tabpanel" aria-labelledby="v-pills-security-tab">
+                            <div class="card">
+                                <div class="card-header">Security</div>
+                                <div class="card-body">
+                                 
+                                    <form>
+                                        <!-- Grid row -->
+                                        <div class="form-row">
+                                            <!-- Default input -->
+                                            <div class="form-group col-md-6">
+                                                <label for="inputEditPassword">Change Password</label>
+                                                <input type="password" class="form-control" id="inputEditPassword" placeholder="New Password">
+                                            </div>
+                                            <!-- Default input -->
+                                            <div class="form-group col-md-6">
+                                                <label for="inputEditConfirmPass">Confirm Password</label>
+                                                <input type="password" class="form-control" id="inputEditConfirmPass" placeholder="Password">
+                                            </div>
+                                            <button class="btn btn-primary btn-sm">Change Password</button>
+                                        </div>
+                                        <!-- Grid row -->
+                                    </form>
+                                    <hr>
+                                    <form>
+                                        <!-- Grid row -->
+                                        <div class="form-row">
+                                            <!-- Default input -->
+                                            <div class="form-group col-md-6">
+                                                <label for="inputEditEmail">Current Email</label>
+                                                <input type="email" readonly class="form-control" id="inputEditEmail" placeholder="Current Email">
+                                            </div>
+                                            <div class="form-group col-md-6">
+                                                <label for="inputEditEmail">New Email</label>
+                                                <input type="email" class="form-control" id="inputEditEmail" placeholder="New Email">
+                                            </div>
+                                           
+                                        </div>
+                                        <button class="btn btn-primary btn-sm">Change Email</button>
+                                        <!-- Grid row -->
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">...mess</div>
+                        <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">...setting</div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+      
+    </main>
+    <!--/Main layout-->
+
+    <!-- Footer Section  -->
+    <div id="footerWrapper"></div>
+    <!--.Footer Section  -->
+
+
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
