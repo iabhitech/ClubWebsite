@@ -87,7 +87,7 @@ $(document).ready(function () {
    */
 
   $("#registerButton").click(function (e) {
-    e.preventDefault();
+    // e.preventDefault();
     e = e.currentTarget;
     let form = `<form class="text-center p-5" action="/authOTP" method="POST">
         <p class="h4 mb-4">Confirm OTP</p>
@@ -112,3 +112,22 @@ $(document).ready(function () {
     });
   });
 });
+
+// Example starter JavaScript for disabling form submissions if there are invalid fields
+(() => {
+  'use strict';
+
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  const forms = document.querySelectorAll('.needs-validation');
+
+  // Loop over them and prevent submission
+  Array.prototype.slice.call(forms).forEach((form) => {
+    form.addEventListener('submit', (event) => {
+      if (!form.checkValidity()) {
+        event.preventDefault();
+        event.stopPropagation();
+      }
+      form.classList.add('was-validated');
+    }, false);
+  });
+})();

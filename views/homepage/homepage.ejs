@@ -96,11 +96,9 @@
             <div class="col-md-6 white-text text-center text-md-left mt-xl-5 mb-5 animated slideInLeft slow">
               <h1 class="h1-responsive font-weight-bold mt-sm-5">Think, Plan and Act </h1>
               <hr class="hr-light">
-              <h6 class="mb-4">
-                <!-- Under supervision of excellent faculty the REC Kannauj has established technical club "UNNAT". This club aims  to make the student advance and sharp so that they can cope up with future technology era.Here the students of different branches collaborate their fields of study to give innovation and enhancement in technology. This technical club was established in it 2016.
-"UNNAT" Club trys to invoke the thinking ,exploring and implementing capacity that can shape their intellect and future.Students develop a better understanding which could help them in their future endeavours. -->
-Under supervision of excellent faculty the REC Kannauj has established technical club "UNNAT". We trys to invoke the thinking, exploring and implementing capacity that can shape their intellect and future. Students develop a better understanding which could help them in their future endeavours.<br>
-<strong>"It is group where everybody can learn and anyone can share their Ideas."</strong>
+              <h6 class="mb-4">                      
+                Under supervision of excellent faculty the REC Kannauj has established technical club "UNNAT". We trys to invoke the thinking, exploring and implementing capacity that can shape their intellect and future. Students develop a better understanding which could help them in their future endeavours.<br>
+                <strong>"It is group where everybody can learn and anyone can share their Ideas."</strong>
 
               </h6>
               <a class="btn btn-white" href="#account" onclick="register()">Join Now</a>
@@ -154,6 +152,7 @@ Under supervision of excellent faculty the REC Kannauj has established technical
               </ul>
               <div class="tab-content white" id="myTabContent">
                 <div class="tab-pane fade show active" id="signIn" role="tabpanel" aria-labelledby="signIn-tab">
+
                   <!-- sign in form  -->
                   <form class="text-center p-5" action="#!" id="login-form">
 
@@ -168,10 +167,10 @@ Under supervision of excellent faculty the REC Kannauj has established technical
                     <div class="d-flex justify-content-around">
                         <div>
                             <!-- Remember me -->
-                            <!-- <div class="custom-control custom-checkbox">
+                            <div class="custom-control custom-checkbox">
                                 <input type="checkbox" class="custom-control-input" id="defaultLoginFormRemember">
                                 <label class="custom-control-label" for="defaultLoginFormRemember">Remember me</label>
-                            </div> -->
+                            </div>
                         </div>
                         <div>
                             <!-- Forgot password -->
@@ -188,26 +187,26 @@ Under supervision of excellent faculty the REC Kannauj has established technical
                     </p>
                   
                     <!-- Social login -->
-                    <!-- <p>or sign in with:</p>
+                    <p>or sign in with:</p>
                   
                     <a href="#" class="mx-2" role="button"><i class="fab fa-facebook-f light-blue-text"></i></a>
                     <a href="#" class="mx-2" role="button"><i class="fab fa-twitter light-blue-text"></i></a>
                     <a href="#" class="mx-2" role="button"><i class="fab fa-linkedin-in light-blue-text"></i></a>
                     <a href="#" class="mx-2" role="button"><i class="fab fa-github light-blue-text"></i></a>
-                   -->
+                  
                   </form>
                   <!-- .sign in form  -->
                 </div>
                 <div class="tab-pane fade" id="register" role="tabpanel" aria-labelledby="register-tab">
                   <!-- sign up form  -->
-                  <form class="text-center p-5" action="/register" method="POST">
+                  <form class="text-center p-5 needs-validation" action="/register" method="POST" novalidate>
 
                     <p class="h4 mb-4">Sign up</p>
 
                     <div class="form-row mb-4">
                         <div class="col">
                             <!-- First name -->
-                            <input type="text" name="fname" id="defaultRegisterFormFirstName" class="form-control" placeholder="First name">
+                            <input type="text" name="fname" id="defaultRegisterFormFirstName" class="form-control" placeholder="First name" required>
                         </div>
                         <div class="col">
                             <!-- Last name -->
@@ -216,18 +215,18 @@ Under supervision of excellent faculty the REC Kannauj has established technical
                     </div>
 
                     <!-- E-mail -->
-                    <input type="email" name="email" id="defaultRegisterFormEmail" class="form-control mb-4" placeholder="E-mail">
+                    <input type="email" name="email" id="defaultRegisterFormEmail" class="form-control mb-4" placeholder="E-mail" required>
 
                     <!-- Password -->
-                    <input type="password" name="pass" id="defaultRegisterFormPassword" class="form-control mb-2" placeholder="Password" aria-describedby="defaultRegisterFormPasswordHelpBlock">
-                    <input type="password" name="c_pass" class="form-control" placeholder="Confirm Password">
+                    <input type="password" name="pass" id="defaultRegisterFormPassword" class="form-control mb-2" placeholder="Password" aria-describedby="defaultRegisterFormPasswordHelpBlock" required>
+                    <input type="password" name="c_pass" class="form-control" placeholder="Confirm Password" required>
                     <small id="defaultRegisterFormPasswordHelpBlock" class="form-text text-muted mb-4">
                         At least 8 characters and 1 digit
                     </small>
 
 
                     <!-- Phone number -->
-                    <input type="number" name="phone-number" id="defaultRegisterPhonePassword" class="form-control" placeholder="Phone number" aria-describedby="defaultRegisterFormPhoneHelpBlock">
+                    <input type="number" name="phone-number" id="defaultRegisterPhonePassword" class="form-control" placeholder="Phone number (Optional)" aria-describedby="defaultRegisterFormPhoneHelpBlock">
                     <!-- <small id="defaultRegisterFormPhoneHelpBlock" class="form-text text-muted mb-4">
                         Optional - for two step authentication
                     </small> -->
