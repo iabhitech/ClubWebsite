@@ -127,7 +127,33 @@ $(document).ready(function () {
         event.preventDefault();
         event.stopPropagation();
       }
+      
+      let passList = $(form).find('input:password');
+      if(passList.length == 2){
+          passwordValidate(passList[0],passList[1]);
+      }
       form.classList.add('was-validated');
+        
     }, false);
   });
 })();
+
+function passwordValidate(e1,e2){
+  $(e1).on("focusout", function () {
+    if ($(this).val() != $(e2).val()) {
+      $(e2).removeClass("is-valid").addClass("is-invalid");
+    } else {
+      $(e2).removeClass("is-invalid").addClass("is-valid");
+    }
+  });
+
+  $(e2).on("keyup", function () {
+    if ($(e1).val() != $(this).val()) {
+      $(this).removeClass("is-valid").addClass("is-invalid");
+    } else {
+      $(this).removeClass("is-invalid").addClass("is-valid");
+    }
+  });
+}
+
+

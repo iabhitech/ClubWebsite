@@ -265,18 +265,18 @@
                                 <div class="card-header">Basic</div>
                                 <div class="card-body">
                                     <!-- Extended default form grid -->
-                                    <form>
+                                    <form class="needs-validation" novalidate>
                                         <!-- Grid row -->
                                         <div class="form-row">
                                         <!-- Default input -->
                                         <div class="form-group col-md-6">
                                             <label for="inputName">Name</label>
-                                            <input type="text" class="form-control" id="inputName" placeholder="Name" value="Alen Kakd">
+                                            <input type="text" class="form-control" id="inputName" placeholder="Name" value="Alen Kakd" required>
                                         </div>
                                         <!-- Default input -->
                                         <div class="form-group col-md-6">
                                             <label for="inputUsername">Username</label>
-                                            <input type="text" class="form-control" id="inputUsername" placeholder="Username" autocomplete="none">
+                                            <input type="text" class="form-control" id="inputUsername" placeholder="Username" autocomplete="none" required>
                                         </div>
                                         </div>
                                         <!-- Grid row -->
@@ -284,7 +284,7 @@
                                         <!-- Default input -->
                                         <div class="form-group mb-2">
                                             <label for="staticEmail2">Email</label>
-                                            <input type="text" readonly class="form-control" id="staticEmail2" value="email@example.com">
+                                            <input type="text" readonly class="form-control" id="staticEmail2" value="email@example.com" required>
                                             <small id="emailHelp" class="form-text text-muted">To Change Email, Please go in Security Section</small>
                                         </div>
                                         <div class="form-group">
@@ -319,35 +319,35 @@
                                 <div class="card-header">Security</div>
                                 <div class="card-body">
                                  
-                                    <form>
+                                    <form class="needs-validation" novalidate>
                                         <!-- Grid row -->
                                         <div class="form-row">
                                             <!-- Default input -->
                                             <div class="form-group col-md-6">
                                                 <label for="inputEditPassword">Change Password</label>
-                                                <input type="password" class="form-control" id="inputEditPassword" placeholder="New Password">
+                                                <input type="password" class="form-control" id="inputEditPassword" placeholder="New Password" required>
                                             </div>
                                             <!-- Default input -->
                                             <div class="form-group col-md-6">
                                                 <label for="inputEditConfirmPass">Confirm Password</label>
-                                                <input type="password" class="form-control" id="inputEditConfirmPass" placeholder="Password">
+                                                <input type="password" class="form-control" id="inputEditConfirmPass" placeholder="Password" required>
                                             </div>
                                             <button class="btn btn-primary btn-sm">Change Password</button>
                                         </div>
                                         <!-- Grid row -->
                                     </form>
                                     <hr>
-                                    <form>
+                                    <form class="needs-validation" novalidate>
                                         <!-- Grid row -->
                                         <div class="form-row">
                                             <!-- Default input -->
                                             <div class="form-group col-md-6">
                                                 <label for="inputEditEmail">Current Email</label>
-                                                <input type="email" readonly class="form-control" id="inputEditEmail" placeholder="Current Email">
+                                                <input type="email" readonly class="form-control" id="inputEditEmail" placeholder="Current Email" required>
                                             </div>
                                             <div class="form-group col-md-6">
                                                 <label for="inputEditEmail">New Email</label>
-                                                <input type="email" class="form-control" id="inputEditEmail" placeholder="New Email">
+                                                <input type="email" class="form-control" id="inputEditEmail" placeholder="New Email" required>
                                             </div>
                                            
                                         </div>
